@@ -161,18 +161,19 @@ section a:hover {
   min-height: 225px;
 }
 
-/* Profile Image — perfectly aligned circular frame */
+/* Profile Image */
 .profile-img {
   width: 100%;
   max-width: 260px;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 6px solid var(--white);
-  outline: 3px solid var(--blue-gray-dark);
+  aspect-ratio: 1 / 1;    
+  object-fit: cover;        
+  border-radius: 50%;      
+  border: 6px solid var(--white);  /* white ring */
+  outline: 3px solid var(--blue-gray-dark); /* outer border */
   display: block;
   margin: 0 auto;
 }
+
 
 /* Header columns alignment */
 header .column-narrow,
