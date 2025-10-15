@@ -8,15 +8,15 @@
 *, *::before, *::after { box-sizing: border-box; }
 
 :root {
-  --black: #535872;         /* Dark slate gray for main background */
-  --white: #FFFFFF;         /* Light content boxes */
-  --blue-gray: #6A799C;     /* Accent color */
-  --blue-gray-dark: #516188;/* Deep blue-gray for header/footer */
+  --black: #535872;
+  --white: #FFFFFF;
+  --blue-gray: #6A799C;
+  --blue-gray-dark: #516188;
 }
 
 /* Darker site background so content pops */
 body {
-  background-color: var(--black);
+  background-color: var(--blue-gray-dark);
   color: var(--white);
   font-family: "Poppins", system-ui, -apple-system, Arial, sans-serif;
   font-size: 16px;
@@ -32,13 +32,13 @@ body {
   background-color: var(--white);
   color: var(--black);
   border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
   overflow: hidden;
 }
 
-/* Header & Footer use slightly different dark tones for depth */
+/* Header & Footer */
 header, footer {
-  background-color: var(--blue-gray-dark);
+  background-color: var(--black);
   color: var(--white);
 }
 
@@ -57,7 +57,7 @@ h1 {
 
 /* Section titles on white cards with dark header bars */
 h2 {
-  background-color: var(--blue-gray-dark);
+  background-color: var(--black);
   color: var(--white);
   font-size: 2rem;
   font-weight: 700;
@@ -74,7 +74,7 @@ h3 {
   margin: 1rem 0 .35rem;
 }
 
-/* Header subtitle styling */
+/* Header subtitle */
 header h2 {
   background: transparent;
   color: var(--blue-gray);
@@ -129,7 +129,7 @@ footer h2 {
 }
 
 .contact-info a:hover {
-  background: var(--blue-gray-dark);
+  background: var(--black);
   color: var(--white);
   text-decoration: none;
 }
@@ -147,7 +147,7 @@ section a:hover {
   transition: color .2s ease;
 }
 
-/* Image and Columns */
+/* Columns */
 .column-narrow {
   width: 30%;
   float: left;
@@ -161,16 +161,20 @@ section a:hover {
   min-height: 225px;
 }
 
+/* Profile Image — perfectly aligned circular frame */
 .profile-img {
   width: 100%;
-  max-width: 250px;
-  height: auto;
+  max-width: 260px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-radius: 50%;
+  border: 6px solid var(--white);
+  outline: 3px solid var(--blue-gray-dark);
   display: block;
   margin: 0 auto;
-  border: 3px solid var(--blue-gray-dark);
 }
 
+/* Header columns alignment */
 header .column-narrow,
 header .column-wide {
   vertical-align: top;
