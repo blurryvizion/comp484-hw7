@@ -8,10 +8,10 @@
 *, *::before, *::after { box-sizing: border-box; }
 
 :root {
-  --black:#1d265a;
+  --black:#3b405c;
   --white:#FFFFFF;
   --blue-gray:#6A799C;
-  --blue-gray-dark:#222B40;
+  --blue-gray-dark:#516188;
 }
 
 body {
