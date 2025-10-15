@@ -97,13 +97,6 @@ section .content-wrap {
   border: 1px solid var(--blue-gray-dark);
 }
 
-/* ✅ Education section fix — now white background with dark text */
-section.education .content-wrap {
-  background: var(--white);
-  color: var(--black);
-  border-top: 4px solid var(--blue-gray-dark);
-}
-
 /* Footer */
 footer {
   text-align: center;
@@ -195,4 +188,23 @@ header .column-wide {
   content: "";
   display: block;
   clear: both;
+}
+
+.education .content-wrap {
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px solid var(--blue-gray-dark);
+  border-top: 4px solid var(--blue-gray-dark);
+}
+
+.education h2 {
+  background-color: var(--blue-gray-dark);
+  color: var(--white);
+  border-left: 8px solid var(--blue-gray);
+}
+
+.education h3,
+.education p,
+.education li {
+  color: var(--black);
 }
