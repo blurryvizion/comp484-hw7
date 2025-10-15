@@ -97,9 +97,10 @@ section .content-wrap {
   border: 1px solid var(--blue-gray-dark);
 }
 
+/* ✅ Education section fix — now white background with dark text */
 section.education .content-wrap {
   background: var(--white);
-  color: var(--white);
+  color: var(--black);
   border-top: 4px solid var(--blue-gray-dark);
 }
 
@@ -168,12 +169,11 @@ section a:hover {
   aspect-ratio: 1 / 1;    
   object-fit: cover;        
   border-radius: 50%;      
-  border: 6px solid var(--white);  /* white ring */
-  outline: 3px solid var(--blue-gray-dark); /* outer border */
+  border: 6px solid var(--white);  
+  outline: 3px solid var(--blue-gray-dark); 
   display: block;
   margin: 0 auto;
 }
-
 
 /* Header columns alignment */
 header .column-narrow,
