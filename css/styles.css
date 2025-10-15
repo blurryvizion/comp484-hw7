@@ -8,7 +8,7 @@
 *, *::before, *::after { box-sizing: border-box; }
 
 :root {
-  --black:#000000;
+  --black:#1d265a;
   --white:#FFFFFF;
   --blue-gray:#6A799C;
   --blue-gray-dark:#222B40;
