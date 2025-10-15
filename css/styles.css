@@ -98,7 +98,7 @@ section .content-wrap {
 }
 
 section.education .content-wrap {
-  background: transparent;
+  background: var(--white);
   color: var(--white);
   border-top: 4px solid var(--blue-gray-dark);
 }
