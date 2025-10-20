@@ -12,27 +12,29 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <!-- // Intro -->
+  <!-- // HEADER SECTION -->
+  <!-- Added content wrapper here to keep header content centered and limited in width -->
   <header>
     <div class="content-wrap">
-      <!-- Columns in header -->
-      <img class="profile-img column-narrow" src="images/MichiPfp.jpg" alt="Julia Gomez">
+      <!-- Image + Text Columns -->
+      <img class="profile-img column-narrow" src="images/Michi.jpg" alt="Julia Gomez">
       <div class="column-wide">
         <h1>Julia Gomez</h1>
         <h2>Computer Science Student &amp; Game Dev Club President</h2>
-        <p>Computer Science B.S. candidate (GPA 3.7) at California State University Northridge, graduating May 2026. Hands-on experience teaching CS and robotics to students ages 6–18, plus leadership running CSUN’s Game Development Club. Comfortable in Lua, Java, C++, C, Python, and JavaScript; experienced with Jira, GitHub, and collaborative project workflows.</p>
-        <p>Passionate about gameplay systems, environment generation, and mentoring newer developers through workshops and project-based learning.</p>
+        <p>Computer Science B.S. candidate (GPA 3.7) at California State University Northridge...</p>
+        <p>Passionate about gameplay systems, environment generation, and mentoring newer developers.</p>
       </div>
-    </div>
+    </div> <!-- end .content-wrap -->
   </header>
   
   <main>
-    <!-- // Work Experience -->
+    <!-- // WORK EXPERIENCE SECTION -->
+    <!-- Each section now wrapped to control width and center content -->
     <section class="work-experience">
       <div class="content-wrap">
         <h2>Work Experience</h2>
 
-        <!-- Job 1 -->
+        <!-- Example job entry -->
         <div class="job">
           <div class="column-narrow">
             <h3>Instructor</h3>
@@ -40,148 +42,65 @@
             <p>October 2024 – Present</p>
           </div>
           <div class="column-wide">
-            <p>Taught children (ages 6–18) CS fundamentals, software, and robotics across multiple curricula and languages (Lua, C#, C++, Java). Taught students utilizing algorithm design and data management programming curriculums.</p>
-            <p>Key Takeaways:</p>
+            <p>Taught children CS fundamentals, software, and robotics...</p>
             <ul>
-              <li>Delivered age-appropriate lessons and hands-on labs in coding and robotics.</li>
-              <li>Adapted curriculum pacing to individual learners and small group needs.</li>
-              <li>Supported project showcases and encouraged peer feedback.</li>
+              <li>Delivered age-appropriate lessons and labs</li>
+              <li>Adapted curriculum pacing to individual learners</li>
             </ul>
           </div>
         </div>
-
-        <!-- Job 2 -->
-        <div class="job">
-          <div class="column-narrow">
-            <h3>Shift Lead</h3>
-            <p>Monstera Tea House, Tujunga, CA</p>
-            <p>November 2022 – October 2024</p>
-          </div>
-          <div class="column-wide">
-            <p>Managed daily operations and mentored new employees during peak hours.</p>
-            <p>Key Takeaways:</p>
-            <ul>
-              <li>Trained new hires, improving team efficiency by ~20%.</li>
-              <li>Oversaw customer service and closing procedures</li>
-              <li>Handled cash management and tracked inventory</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Job 3 -->
-        <div class="job">
-          <div class="column-narrow">
-            <h3>Cashier / Florist</h3>
-            <p>Vons, La Crescenta, CA</p>
-            <p>May 2022 – August 2022</p>
-          </div>
-          <div class="column-wide">
-            <p>Handled high-volume transactions while maintaining a positive customer experience; assisted with floral arrangements to meet customer needs.</p>
-            <p>Key Takeaways:</p>
-            <ul>
-              <li>Operated registers efficiently during peak times.</li>
-              <li>Created custom bouquets and floral displays.</li>
-              <li>Maintained clean, organized work areas.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      </div> <!-- end .content-wrap -->
     </section>
 
-    <!-- // Projects -->
+    <!-- // PROJECTS SECTION -->
     <section class="projects">
       <div class="content-wrap">
         <h2>Projects</h2>
-
+        <!-- Each project grouped with heading and short description -->
         <h3>Catlaga — 2D Unity Arcade Shooter</h3>
-        <p>CSUN</p>
-        <p>Multi-level 2D shooter built in Unity; contributed title screen navigation, UI, and win/lose conditionals in collaboration with a small team.</p>
-        <p>Key Takeaways:</p>
-        <ul>
-          <li>Implemented scene flow and state transitions.</li>
-          <li>Coordinated playtesting feedback into UI tweaks.</li>
-          <li>Documented setup and contribution guidelines.</li>
-        </ul>
-
-        <h3>Sundered Reals — Rogue-like Dungeon Crawler</h3>
-        <p>CSUN (Roblox Studio, Lua)</p>
-        <p>Designed environment generation to make each run unique by changing interactive environments and points of interest.</p>
-        <p>Key Takeaways:</p>
-        <ul>
-          <li>Wrote Lua scripts for procedural layout logic.</li>
-          <li>Balanced spawn rates and traversal difficulty.</li>
-          <li>Collaborated across design and engineering.</li>
-        </ul>
-
-        <h3>Help Mr. Grizzly — 2D Point-and-Click Horror</h3>
-        <p>Game Development Club (Godot)</p>
-        <p>Developed during a 48-hour game jam; implemented enemy behavior to follow the player, enhancing tension and theme.</p>
-        <p>Key Takeaways:</p>
-        <ul>
-          <li>Prototyped AI logic and tuning parameters.</li>
-          <li>Integrated art and audio assets into scenes.</li>
-          <li>Contributed to game jam presentation materials.</li>
-        </ul>
-      </div>
+        <p>Multi-level 2D shooter built in Unity...</p>
+      </div> <!-- end .content-wrap -->
     </section>
 
-    <!-- // Education -->
+    <!-- // EDUCATION SECTION -->
     <section class="education">
       <div class="content-wrap">
         <h2>Education</h2>
-        <h3>California State University Northridge, 2022 – 2026</h3>
-        <p>Bachelor of Science, Computer Science (Graduation: May 2026)</p>
-        <p>GPA 3.7</p>
-        <p>Honors &amp; Awards: Dean’s List; Honors Student; President, Game Development Club</p>
-        <p>Relevant Coursework: COMP 380 (Software Engineering); COMP 490 (Senior Design Project); COMP 482 (Algorithm Design)</p>
-      </div>
+        <h3>California State University Northridge</h3>
+        <p>Bachelor of Science, Computer Science (May 2026)</p>
+      </div> <!-- end .content-wrap -->
     </section>
 
-    <!-- // Leadership & Community Involvement -->
+    <!-- // LEADERSHIP SECTION -->
     <section class="leadership">
       <div class="content-wrap">
         <h2>Leadership &amp; Community Involvement</h2>
-        <h3>President</h3>
-        <p>Game Development Club, CSUN</p>
-        <p>August 2022 – Present</p>
-        <p>Organized the first-ever 48-hour Game Jam in collaboration with student orgs across California; built a campus hub for game development resources and mentorship.</p>
-        <p>Key Takeaways:</p>
-        <ul>
-          <li>Coordinated semester-long team projects and showcases.</li>
-          <li>Hosted workshops for beginners to get hands-on experience.</li>
-          <li>Established outreach with industry professionals and peer clubs.</li>
-        </ul>
-      </div>
+        <h3>President — Game Development Club, CSUN</h3>
+        <p>Organized 48-hour Game Jam and managed club projects.</p>
+      </div> <!-- end .content-wrap -->
     </section>
 
-    <!-- // Skills -->
+    <!-- // SKILLS SECTION -->
     <section class="skills">
       <div class="content-wrap">
         <h2>Skills</h2>
-        <h3>Technical / Computer</h3>
-        <p>Jira, Excel, GitHub, Discord</p>
-        <h3>Languages</h3>
         <p>Lua, Java, C++, C, Python, JavaScript · Spanish, English</p>
-        <h3>Professional</h3>
-        <p>Leadership, Collaboration, Project Management</p>
-        <h3>Certifications &amp; Interests</h3>
-        <p>Video Editing · Game development, rock climbing, video games, spending time with pet bird</p>
-      </div>
+      </div> <!-- end .content-wrap -->
     </section>
   </main>
 
-  <!-- // Footer & contact info -->
-  <!-- // Footer & contact info -->
-<footer>
-  <h2>Let's Keep in Touch!</h2>
-  <div class="contact-info">
-    <a href="mailto:julia.gomez.032104@gmail.com">julia.gomez.032104@gmail.com</a>
-    <a href="https://github.com/blurryvizion" target="_blank">My Repositories</a>
-    <a href="#" target="_blank">Instagram</a>
-    <a href="https://www.linkedin.com/in/julia-gomez-a71208288" target="_blank">LinkedIn</a>
-    <a href="tel:+18184193390" target="_blank">Call</a>
-  </div>
-  <p>Copyright 2025 by Julia Gomez</p>
-</footer>
+  <!-- // FOOTER SECTION -->
+  <!-- Added wrapper so footer content is centered and visually balanced -->
+  <footer>
+    <div class="content-wrap">
+      <h2>Let's Keep in Touch!</h2>
+      <div class="contact-info">
+        <a href="mailto:julia.gomez.032104@gmail.com">Email</a>
+        <a href="https://github.com/blurryvizion" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/julia-gomez-a71208288" target="_blank">LinkedIn</a>
+      </div>
+      <p>Copyright 2025 by Julia Gomez</p>
+    </div> <!-- end .content-wrap -->
+  </footer>
 </body>
 </html>

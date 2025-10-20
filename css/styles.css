@@ -1,16 +1,6 @@
-/* ============================================
-   Julia Gomez Resume Stylesheet
-============================================ */
-
-/* Color Palette
-#535872 - Muted Slate (background)
-#FFFFFF - White (content boxes)
-#6A799C - Blue Gray (accents)
-#516188 - Dark Blue Gray (header/footer)
-*/
-
-*, *::before, *::after { box-sizing: border-box; }
-
+/* ===========================
+   GLOBAL STYLES & VARIABLES
+   =========================== */
 :root {
   --black: #535872;
   --white: #FFFFFF;
@@ -18,20 +8,24 @@
   --blue-gray-dark: #516188;
 }
 
-/* ====== Base Body ====== */
+/* Base typography and layout reset */
 body {
   background-color: var(--blue-gray-dark);
   color: var(--white);
-  font-family: "Poppins", system-ui, -apple-system, Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.7;
   margin: 0;
 }
 
-/* ====== Content Wrapper (White Cards) ====== */
+/* ===========================
+   CONTENT WRAPPER
+   Used throughout the site to center and contain content
+   =========================== */
 .content-wrap {
+  /* Instead of fixed width, using max-width makes the design more flexible */
   max-width: 950px;
-  margin: 50px auto;
+  margin: 0 auto; /* Centers horizontally */
   padding: 50px;
   background-color: var(--white);
   color: var(--black);
@@ -40,180 +34,85 @@ body {
   overflow: hidden;
 }
 
-/* ====== Header Layout ====== */
-header {
+/* ===========================
+   HEADER & FOOTER
+   =========================== */
+header, footer {
   background-color: var(--black);
   color: var(--white);
 }
 
-header .content-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  text-align: left;
-}
-
-/* ====== Profile Image ====== */
-.profile-img {
-  width: 100%;
-  max-width: 260px;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;        /* perfect crop inside circle */
-  object-position: center;  /* center subject */
-  border-radius: 50%;
-  border: 6px solid var(--white);
-  outline: 3px solid var(--blue-gray-dark);
-  display: block;
-  margin: 0 auto;
-}
-
-/* ====== Header Text Columns ====== */
-header .column-narrow,
-header .column-wide {
-  vertical-align: top;
-}
-
-header .column-wide {
-  flex: 1;
-  min-width: 300px;
-}
-
-/* ====== Headings ====== */
+/* ===========================
+   HEADINGS
+   =========================== */
 h1, h2, h3 {
   font-family: "Merriweather", Georgia, serif;
 }
 
 h1 {
   font-size: 2.9rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
   text-transform: uppercase;
   margin: 0;
 }
 
-header h2 {
-  background: transparent;
-  color: var(--blue-gray);
-  border-left: none;
-  padding: 0;
-  margin: 0.25rem 0 0.75rem;
-  font-size: 1.15rem;
-  font-weight: 600;
-  font-family: "Poppins", system-ui, -apple-system, Arial, sans-serif;
-}
-
-/* ====== Section Headings ====== */
+/* Section headings stand out on white background */
 h2 {
   background-color: var(--black);
   color: var(--white);
   font-size: 2rem;
   font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  padding: 0.6rem 1rem;
+  padding: .6rem 1rem;
   border-left: 8px solid var(--blue-gray);
 }
 
-h3 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--blue-gray-dark);
-  margin: 1rem 0 0.35rem;
-}
-
-/* ====== Sections ====== */
-section {
-  margin: 0 auto 40px;
-}
-
-section .content-wrap {
-  background: var(--white);
-  color: var(--black);
-  border: 1px solid var(--blue-gray-dark);
-}
-
-/* ====== Jobs and Layout Helpers ====== */
-.job {
-  margin-bottom: 1.25rem;
-}
-
-.job::after,
-.content-wrap::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-/* ====== Education Section ====== */
-.education .content-wrap {
-  background-color: var(--white);
-  color: var(--black);
-  border: 1px solid var(--blue-gray-dark);
-  border-top: 4px solid var(--blue-gray-dark);
-}
-
-.education h2 {
-  background-color: var(--black);
-  color: var(--white);
-  font-size: 2rem;
-  font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  padding: 0.6rem 1rem;
-  border-left: 8px solid var(--blue-gray);
-}
-
-
-.education h3,
-.education p,
-.education li {
-  color: var(--black);
-}
-
-/* ====== Footer ====== */
+/* ===========================
+   FOOTER LINKS
+   =========================== */
 footer {
-  background-color: var(--black);
-  color: var(--white);
   text-align: center;
   padding: 40px 0;
 }
 
-footer h2 {
-  background: transparent;
-  color: var(--white);
-  border-left: none;
-  padding: 0;
-  margin: 0 0 0.75rem;
-  font-size: 1.3rem;
-}
-
 .contact-info a {
-  padding: 10px 12px;
   display: inline-block;
   color: var(--white);
   background: var(--blue-gray);
   border: 1px solid var(--white);
   border-radius: 999px;
   margin: 4px 6px;
+  padding: 10px 12px;
 }
 
 .contact-info a:hover {
   background: var(--black);
-  color: var(--white);
-  text-decoration: none;
 }
 
-/* ====== Links ====== */
-a {
-  color: var(--blue-gray-dark);
-  text-decoration: none;
-  font-weight: 700;
+/* ===========================
+   COLUMN LAYOUT & IMAGES
+   =========================== */
+.column-narrow {
+  width: 30%;
+  float: left;
+  padding-right: 3%;
 }
 
-section a:hover {
-  color: var(--blue-gray);
-  text-decoration: underline;
-  transition: color 0.2s ease;
+.column-wide {
+  width: 67%;
+  float: left;
+}
+
+.profile-img {
+  max-width: 260px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid var(--white);
+  outline: 3px solid var(--blue-gray-dark);
+}
+
+/* Clearfix for floated columns */
+.content-wrap::after {
+  content: "";
+  display: block;
+  clear: both;
 }
