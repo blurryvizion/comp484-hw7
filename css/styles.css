@@ -1,3 +1,7 @@
+/* ============================================
+   Julia Gomez Resume Stylesheet
+============================================ */
+
 /* Color Palette
 #535872 - Muted Slate (background)
 #FFFFFF - White (content boxes)
@@ -14,7 +18,7 @@
   --blue-gray-dark: #516188;
 }
 
-/* Darker site background so content pops */
+/* ====== Base Body ====== */
 body {
   background-color: var(--blue-gray-dark);
   color: var(--white);
@@ -24,7 +28,7 @@ body {
   margin: 0;
 }
 
-/* Content wrapper (white cards on dark background) */
+/* ====== Content Wrapper (White Cards) ====== */
 .content-wrap {
   max-width: 950px;
   margin: 50px auto;
@@ -36,13 +40,47 @@ body {
   overflow: hidden;
 }
 
-/* Header & Footer */
-header, footer {
+/* ====== Header Layout ====== */
+header {
   background-color: var(--black);
   color: var(--white);
 }
 
-/* Headings */
+header .content-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+/* ====== Profile Image ====== */
+.profile-img {
+  width: 100%;
+  max-width: 260px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;        /* perfect crop inside circle */
+  object-position: center;  /* center subject */
+  border-radius: 50%;
+  border: 6px solid var(--white);
+  outline: 3px solid var(--blue-gray-dark);
+  display: block;
+  margin: 0 auto;
+}
+
+/* ====== Header Text Columns ====== */
+header .column-narrow,
+header .column-wide {
+  vertical-align: top;
+}
+
+header .column-wide {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* ====== Headings ====== */
 h1, h2, h3 {
   font-family: "Merriweather", Georgia, serif;
 }
@@ -50,12 +88,23 @@ h1, h2, h3 {
 h1 {
   font-size: 2.9rem;
   font-weight: 700;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   margin: 0;
 }
 
-/* Section titles on white cards with dark header bars */
+header h2 {
+  background: transparent;
+  color: var(--blue-gray);
+  border-left: none;
+  padding: 0;
+  margin: 0.25rem 0 0.75rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  font-family: "Poppins", system-ui, -apple-system, Arial, sans-serif;
+}
+
+/* ====== Section Headings ====== */
 h2 {
   background-color: var(--black);
   color: var(--white);
@@ -63,7 +112,7 @@ h2 {
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 1rem;
-  padding: .6rem 1rem;
+  padding: 0.6rem 1rem;
   border-left: 8px solid var(--blue-gray);
 }
 
@@ -71,22 +120,10 @@ h3 {
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--blue-gray-dark);
-  margin: 1rem 0 .35rem;
+  margin: 1rem 0 0.35rem;
 }
 
-/* Header subtitle */
-header h2 {
-  background: transparent;
-  color: var(--blue-gray);
-  border-left: none;
-  padding: 0;
-  margin: .25rem 0 .75rem;
-  font-size: 1.15rem;
-  font-weight: 600;
-  font-family: "Poppins", system-ui, -apple-system, Arial, sans-serif;
-}
-
-/* Section styles */
+/* ====== Sections ====== */
 section {
   margin: 0 auto 40px;
 }
@@ -97,101 +134,19 @@ section .content-wrap {
   border: 1px solid var(--blue-gray-dark);
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 40px 0;
+/* ====== Jobs and Layout Helpers ====== */
+.job {
+  margin-bottom: 1.25rem;
 }
 
-footer h2 {
-  background: transparent;
-  color: var(--white);
-  border-left: none;
-  padding: 0;
-  margin: 0 0 .75rem;
-  font-size: 1.3rem;
-}
-
-.contact-info a {
-  padding: 10px 12px;
-  display: inline-block;
-  color: var(--white);
-  background: var(--blue-gray);
-  border: 1px solid var(--white);
-  border-radius: 999px;
-  margin: 4px 6px;
-}
-
-.contact-info a:hover {
-  background: var(--black);
-  color: var(--white);
-  text-decoration: none;
-}
-
-/* Links */
-a {
-  color: var(--blue-gray-dark);
-  text-decoration: none;
-  font-weight: 700;
-}
-
-section a:hover {
-  color: var(--blue-gray);
-  text-decoration: underline;
-  transition: color .2s ease;
-}
-
-/* Columns */
-.column-narrow {
-  width: 30%;
-  float: left;
-  padding-right: 3%;
-  min-height: 175px;
-}
-
-.column-wide {
-  width: 67%;
-  float: left;
-  min-height: 225px;
-}
-
-/* Avatar: make entire photo visible inside the circular frame */
-.profile-img {
-  width: 100%;
-  max-width: 260px;
-  aspect-ratio: 1 / 1;    
-  object-fit: cover;        /* crop edges cleanly */
-  object-position: center;  /* center the subject */
-  border-radius: 50%;      
-  border: 6px solid var(--white);  
-  outline: 3px solid var(--blue-gray-dark); 
-  display: block;
-  margin: 0 auto;
-}
-
-
-/* Header columns alignment */
-header .column-narrow,
-header .column-wide {
-  vertical-align: top;
-}
-
+.job::after,
 .content-wrap::after {
   content: "";
   display: block;
   clear: both;
 }
 
-.job {
-  margin-bottom: 1.25rem;
-}
-
-.job::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
+/* ====== Education Section ====== */
 .education .content-wrap {
   background-color: var(--white);
   color: var(--black);
@@ -211,17 +166,48 @@ header .column-wide {
   color: var(--black);
 }
 
-/* Align profile image and header text side by side, vertically centered */
-header .content-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem; /* space between image and text */
-  flex-wrap: wrap; /* keeps layout responsive on small screens */
-  text-align: left;
+/* ====== Footer ====== */
+footer {
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+  padding: 40px 0;
 }
 
-header .column-wide {
-  flex: 1;
-  min-width: 300px;
+footer h2 {
+  background: transparent;
+  color: var(--white);
+  border-left: none;
+  padding: 0;
+  margin: 0 0 0.75rem;
+  font-size: 1.3rem;
+}
+
+.contact-info a {
+  padding: 10px 12px;
+  display: inline-block;
+  color: var(--white);
+  background: var(--blue-gray);
+  border: 1px solid var(--white);
+  border-radius: 999px;
+  margin: 4px 6px;
+}
+
+.contact-info a:hover {
+  background: var(--black);
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* ====== Links ====== */
+a {
+  color: var(--blue-gray-dark);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+section a:hover {
+  color: var(--blue-gray);
+  text-decoration: underline;
+  transition: color 0.2s ease;
 }
