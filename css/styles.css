@@ -160,7 +160,7 @@ section a:hover {
   width: 100%;
   max-width: 260px;
   aspect-ratio: 1 / 1;    
-  object-fit: cover;        
+  object-fit: contain;        
   border-radius: 50%;      
   border: 6px solid var(--white);  
   outline: 3px solid var(--blue-gray-dark); 
