@@ -208,3 +208,22 @@ header .column-wide {
 .education li {
   color: var(--black);
 }
+
+/* Align profile image and header text side by side, vertically centered */
+header .content-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* space between image and text */
+  flex-wrap: wrap; /* keeps layout responsive on small screens */
+  text-align: left;
+}
+
+header .profile-img {
+  margin: 0; /* remove auto-centering from earlier rule */
+}
+
+header .column-wide {
+  flex: 1;
+  min-width: 300px;
+}
