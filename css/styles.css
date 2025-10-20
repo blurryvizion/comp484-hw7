@@ -157,17 +157,18 @@ section a:hover {
 
 /* Avatar: make entire photo visible inside the circular frame */
 .profile-img {
-  width: clamp(220px, 26vw, 280px);
-  height: clamp(220px, 26vw, 280px);
-  border-radius: 50%;
-  object-fit: contain;          /* show the whole image, no crop */
-  object-position: 50% 50%;
-  background-color: #fff;     
-  border: 6px solid var(--white);
-  outline: 3px solid var(--blue-gray-dark);
+  width: 100%;
+  max-width: 260px;
+  aspect-ratio: 1 / 1;    
+  object-fit: cover;        /* crop edges cleanly */
+  object-position: center;  /* center the subject */
+  border-radius: 50%;      
+  border: 6px solid var(--white);  
+  outline: 3px solid var(--blue-gray-dark); 
   display: block;
-  margin: 0;
+  margin: 0 auto;
 }
+
 
 /* Header columns alignment */
 header .column-narrow,
