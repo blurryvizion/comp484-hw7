@@ -221,10 +221,6 @@ header .content-wrap {
   text-align: left;
 }
 
-header .profile-img {
-  margin: 0; /* remove auto-centering from earlier rule */
-}
-
 header .column-wide {
   flex: 1;
   min-width: 300px;
