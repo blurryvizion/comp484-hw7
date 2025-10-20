@@ -157,7 +157,7 @@ section .content-wrap {
 .education h2 {
   background-color: var(--blue-gray-dark);
   color: var(--white);
-  border-left: 8px solid var(--blue-gray);
+  border-left: 8px solid var(--blue-gray-dark);
 }
 
 .education h3,
